@@ -1,0 +1,28 @@
+using System;
+					
+public class Program
+{
+//Tapşırıq: 2 array verilmişdir, 2ci arraydəki bütün elementlər həm də 1cidə varsa , true əks halda false çap olunsun.
+//Məsələn: int[] 1ciarr = {211,9,-6,12,34,56,32,5,19};
+//int[] 2ciArr = {19,-6, 32};
+	
+	public static void Main()
+	{
+		int[] array1 = {1,9,-8,12,44,66,22,5,99};
+        int[] array2= {99,12,-8};
+		int counter=0;
+		
+		foreach(int a in array1)
+		foreach(int b in array2)
+			
+		if (a==b){
+		counter++;
+		}
+		if(counter==array2.Length){
+		 Console.WriteLine("true");
+		}
+		else{
+		 Console.WriteLine("false");}
+	}
+
+}
